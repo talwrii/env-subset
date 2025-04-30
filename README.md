@@ -62,6 +62,10 @@ Read settings from a file. This can be generated with `printenv` but has some ad
 env-subset -f environment.env printenv
 ```
 
+## Debugging
+`env-subset printenv`, `env-subset printenv | grep`, `env-subset printenv | fzf` are useful commands for working out what `env-subset` is doing.
+
+
 ## About me
 I am **@readwithai**. I create tools for reading, research and agency sometimes using the markdown editor [Obsidian](https://readwithai.substack.com/p/what-exactly-is-obsidian).
 
