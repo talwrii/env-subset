@@ -1,6 +1,8 @@
 # env-subset -- Run a command with a subset of the environment
 **@readwithai** - [X](https://x.com/readwithai) - [blog](https://readwithai.substack.com/) - [machine-aided reading](https://www.reddit.com/r/machineAidedReading/) - [📖](https://readwithai.substack.com/p/what-is-reading-broadly-defined)[⚡️](https://readwithai.substack.com/s/technical-miscellany)[🖋️](https://readwithai.substack.com/p/note-taking-with-obsidian-much-of)
 
+env-subset is a swiss army knife for manipulating the environment used to run a command, written because `env` did not have the options I wanted and the other ways of doing things was unwieldy
+
 
 ## Motivation
 Programs change their behaviour based on the environment. It is therefore natural to want to be able to control the environment to control the program for debug and standard use. There are some tools for this - namely `env` and `printenv` but they are a little cumbersome.
@@ -16,6 +18,7 @@ If you want to change a single environment variable you can use e.g. `env VAR=va
 
 This is vaguely related to the idea of [dotenv](https://www.npmjs.com/package/dotenv) and [python-dotenv](https://pypi.org/project/python-dotenv/).
 
+For complete control, you can write your own program in python using the `env` option of `subprocess` - like this tool does.
 
 ## Installation
 You can install env-subset using [pipx](https://github.com/pypa/pipx):
